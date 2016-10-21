@@ -1,2 +1,2 @@
 # documentsIFT
-Conversion to latex of IFT documents
+Conversion of IFT documents to latex
