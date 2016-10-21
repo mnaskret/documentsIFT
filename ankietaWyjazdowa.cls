@@ -13,22 +13,18 @@
 
 \input{size12.clo}
 
-
-
-
-
-
-
-
-
-% Your first and last name
-\newcommand{\nameLastname}[1]{\def\@nameLastname{#1}}
+% Your first name
+\newcommand{\firstName}[1]{\def\@firstName{#1}}
+% Your last name
+\newcommand{\lastName}[1]{\def\@lastName{#1}}
 % Destination - city, institute, conference name
 \newcommand{\destination}[1]{\def\@destination{#1}}
 % Dates of the event
-\newcommand{\dates}[1]{\def\@dates{#1}}
+\newcommand{\datesFrom}[1]{\def\@datesFrom{#1}}
+\newcommand{\datesTo}[1]{\def\@datesTo{#1}}
 % Dates of leave
-\newcommand{\leaveDates}[1]{\def\@leaveDates{#1}}
+\newcommand{\leaveFrom}[1]{\def\@leaveFrom{#1}}
+\newcommand{\leaveTo}[1]{\def\@leaveTo{#1}}
 % Purpose of your trip - invited professor/scientific guest/scientific project/talk/poster
 \newcommand{\purpose}[1]{\def\@purpose{#1}}
 % The title of your contribution/project
@@ -58,11 +54,11 @@
 \newcommand{\makeAnkieta}{
  \normalsize
  \begin{enumerate}
- \itemAnkieta{Kto}{\@nameLastname}
+ \itemAnkieta{Kto}{\@firstName \@lastName}
  % miejsce, instytucja, konferencja
  \itemAnkieta{Dokąd}{\@destination}
- \itemAnkieta{Na jaki okres}{\@dates}
- \itemAnkieta{Okres urlopu}{\@leaveDates}
+ \itemAnkieta{Na jaki okres}{\@datesFrom - \@datesTo}
+ \itemAnkieta{Okres urlopu}{\@leaveFrom - \@leaveTo}
  % profesor zaproszony, gość naukowy, wykład zaproszony, staż naukowy, komunikat ustny, plakat,  itp.
  \itemAnkieta{W jakim charakterze}{\@purpose}
  \itemAnkieta{Tytuły wystapień}{\@contributionTitle}
