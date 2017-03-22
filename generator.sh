@@ -2,8 +2,8 @@
 git pull
 
 choice=$(whiptail --title "IFT documents generator" --menu "Which document would you like to create?" 25 78 16 \
-"Skierowanie" "Wniosek o skierowanie za granicę." \
-"Podroz" "Wniosek podróż służbowa." 3>&1 1>&2 2>&3)
+"Skierowanie" "Wniosek o skierowanie za granicę. (Scientific collaboration)" \
+"Podroz" "Wniosek podróż służbowa. (Conference)" 3>&1 1>&2 2>&3)
 firstName=$(whiptail --inputbox "What is your first name" 8 78 --title "IFT document generator" 3>&1 1>&2 2>&3)
 lastName=$(whiptail --inputbox "What is your last name" 8 78 --title "IFT document generator" 3>&1 1>&2 2>&3)
 position=$(whiptail --inputbox "What is your position" 8 78 --title "IFT document generator" 3>&1 1>&2 2>&3)

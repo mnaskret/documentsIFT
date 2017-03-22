@@ -122,7 +122,7 @@
  \item \textbf{Nazwa szkoły lub jednostki naukowej za granicą} \textit{\@destinationInstitution} \textbf{, czas pobytu (od} \textit{\@datesFrom} \textbf{do} \textit{\@datesTo}\textbf{)}
  \item \textbf{Cel i charakter wyjazdu (odpowiednie zakreślić):}
   \begin{enumerate}
-   \item \ifnumcomp{\@purposeNumber}{=}{0}{\ul{prowadzenie badań naukowych (mogą być kierowane za granice osoby uczestniczące w realizacji badan naukowych w kraju),}}{prowadzenie badań naukowych (mogą być kierowane za granicę osoby uczestniczące w realizacji badan naukowych w kraju),}
+   \item \ifnumcomp{\@purposeNumber}{=}{0}{\ul{prowadzenie badań naukowych (mogą być kierowane za granice osoby uczestniczące w realizacji badań naukowych w kraju),}}{prowadzenie badań naukowych (mogą być kierowane za granicę osoby uczestniczące w realizacji badan naukowych w kraju),}
    \item \ifnumcomp{\@purposeNumber}{=}{1}{\ul{podejmowanie i prowadzenie działalności dydaktycznej,}}{podejmowanie i prowadzenie działalności dydaktycznej,}
    \item szkoleniowy na: 
    \begin{enumerate}
@@ -147,7 +147,7 @@
   \centering podpis dysponenta środków finansowych}
   \end{flushright}
   \begin{enumerate}
-   \item \textbf{koszty podróży w złotówkach} \textit{\@travelCost}
+   \item \textbf{koszty podróży w złotówkach} \textit{\@travelCost\hspace{1ex}PLN}
    \item koszty podróży w dewizach
    \begin{enumerate}
     \item \textbf{hotel} \textit{\@hotelCost}
@@ -162,7 +162,7 @@
  \item \textbf{Wypłata:}
   \begin{enumerate}
    \item \textbf{w dewizach} \textit{\@totalCostCurrency}
-   \item \textbf{w złotych} \textit{\@totalCostPLN}
+   \item \textbf{w złotych} \textit{\@totalCostPLN\hspace{1ex}PLN}
   \end{enumerate}
  \item \textbf{Załączniki, które należy załączyć do wniosku:}
   \begin{enumerate}

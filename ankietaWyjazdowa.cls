@@ -86,16 +86,16 @@
 \newcommand{\makeAnkieta}{
  \normalsize
  \begin{enumerate}
- \itemAnkieta{Kto}{\@firstName \@lastName}
+ \itemAnkieta{Kto}{\@firstName\hspace{1ex}\@lastName}
  % miejsce, instytucja, konferencja
- \itemAnkieta{Dokąd}{\@destinationEvent, \@destinationInstitution, \@destinationCity, \@destinationCountry}
- \itemAnkieta{Na jaki okres}{\@datesFrom - \@datesTo}
- \itemAnkieta{Okres urlopu}{\@leaveFrom - \@leaveTo}
+ \itemAnkieta{Dokąd}{\@destinationEvent,\hspace{1ex}\@destinationInstitution,\hspace{1ex}\@destinationCity,\hspace{1ex}\@destinationCountry}
+ \itemAnkieta{Na jaki okres}{\@datesFrom\hspace{1ex}-\hspace{1ex}\@datesTo}
+ \itemAnkieta{Okres urlopu}{\@leaveFrom\hspace{1ex}-\hspace{1ex}\@leaveTo}
  % profesor zaproszony, gość naukowy, wykład zaproszony, staż naukowy, komunikat ustny, plakat,  itp.
  \itemAnkieta{W jakim charakterze}{\@purpose}
  \itemAnkieta{Tytuły wystapień}{\@contributionTitle}
  % kwota, źródło
- \itemFinance{Sposób finansowania}{Kwota}{\@cost}{Źródło}{\@fundingSource}
+ \itemFinance{Sposób finansowania}{Kwota}{\@cost\hspace{1ex}PLN}{Źródło}{\@fundingSource}
  % zastępstwo, itp.
  \itemAnkieta{Zajęcia dydaktyczne}{\@classes}
 \end{enumerate}
